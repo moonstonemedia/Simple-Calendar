@@ -270,6 +270,8 @@ return array_merge( array(
 
 		if ( ( $calendar instanceof Calendar ) && ( $event instanceof Event ) ) {
 
+			$event->date_currently_processing = $calendar->date_currently_processing;
+
 			switch ( $tag ) {
 
 				/* ============ *
